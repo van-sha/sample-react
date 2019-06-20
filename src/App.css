@@ -9,5 +9,13 @@
   color: white;
   margin-bottom: 10px;
 }
-
-
+.no-user {
+  text-align: center;
+  color: red;
+  padding: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.userDetail td:first-child {
+  font-weight: bold;
+}

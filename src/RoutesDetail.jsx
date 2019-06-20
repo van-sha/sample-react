@@ -6,7 +6,7 @@ import UserDetailsContainer from './containers/userDetail/UserDetailsContainer.j
 
 const RoutesDetail = () => {
     return (
-      <div class="app-content">
+      <div className="app-content">
         <Route
           exact
           path="/"

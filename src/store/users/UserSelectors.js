@@ -16,18 +16,26 @@ const getSortedUserList = createSelector(
 
 const getUserById = (state, id) => {
    const users = state.users.list;
-   return users.get(id).toJS();
+   const user = users.get(id)
+   return user ? user.toJS() : null;
 }
 const getCompany = (state, id) => {
     const user = getUserById(state, id);
-    const name = toCamelCase(user.company);
-    const company = state.companies.get(name);
-    return company.toJS();
+    if (!user) {
+        return null;
+    }
+        const name = toCamelCase(user.company);
+        const company = state.companies.get(name);
+        return company ? company.toJS(): null;
 
 }
 const getUserWithCompany = createSelector(
     [getUserById, getCompany],
     (user, company) => {
+        if (!user){
+            return null;
+        }
+
         return {
             ...user,
             company: {
