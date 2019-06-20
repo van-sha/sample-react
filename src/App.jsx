@@ -21,9 +21,9 @@ function App() {
 		return (
 			<Provider store={store}>
 					<Router>
-            <div className="App">
-              <header className="App-header">
-                <h1 className="App-title">Users APP</h1>
+            <div className="app">
+              <header className="app-header">
+                <h2 className="app-title">Users Application</h2>
               </header>
               <Routes />
             </div>
