@@ -15,6 +15,19 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+It will be redirected to http://localhost:3000/user-list and will load the list of users.
+
+when you click on any of the user - 'Name' field it will take you to detail page for that user
+
+url would be http://localhost:3000/details/:userId
+
+User can bookmark the user-details page. 
+
+If userId being passed to user-detail page doesn't exist, then it would show the appropriate message.
+
+If user try to open any other link which doesn't exist, User will be redirected 
+to  http://localhost:3000/404 page.
+
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
