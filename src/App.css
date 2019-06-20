@@ -9,7 +9,7 @@
   color: white;
   margin-bottom: 10px;
 }
-.no-user {
+.no-user, .error-page {
   text-align: center;
   color: red;
   padding: 50px;
