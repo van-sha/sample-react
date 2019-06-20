@@ -42,3 +42,7 @@ a
 {
   color: blue;
 }
+.userDetail td:first-child {
+  font-weight: bold;
+  color: #C76730;
+}
